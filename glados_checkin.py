@@ -83,6 +83,7 @@ class GLaDOSChecker:
 
     def send_notification(self, status: str, checkin_result: str):
         message = (
+            f"#签到\n"
             f"🕒 北京时间: {self._current_time()}\n"
             f"📧 账户: {self.email}\n\n"
             f"🔔 签到结果: {checkin_result}\n"
